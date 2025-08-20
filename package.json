@@ -1,0 +1,55 @@
+{
+  "name": "claude-project-indexer",
+  "version": "1.0.0",
+  "description": "Advanced project indexing tool for Claude Code - gives Claude complete codebase awareness",
+  "main": "indexer.js",
+  "bin": {
+    "claude-index": "./indexer.js",
+    "claude-watch": "./watcher.js"
+  },
+  "scripts": {
+    "index": "node indexer.js",
+    "watch": "node watcher.js",
+    "index-once": "node watcher.js --once",
+    "test": "node test.js",
+    "install-global": "npm install -g .",
+    "setup": "npm install && node setup.js"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "code-analysis",
+    "project-indexing",
+    "ai-development",
+    "codebase-mapping",
+    "developer-tools",
+    "file-watcher",
+    "code-intelligence"
+  ],
+  "author": "Claude Project Indexer Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/claude-project-indexer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/claude-project-indexer/issues"
+  },
+  "homepage": "https://github.com/your-username/claude-project-indexer#readme",
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "indexer.js",
+    "watcher.js", 
+    "fresh.md",
+    "setup.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "preferGlobal": true
+}
